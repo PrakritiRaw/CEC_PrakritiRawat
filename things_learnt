@@ -1,0 +1,2 @@
+Using sizeof directly to find the size of arrays can result in an error in the code, as array parameters are treated as pointers. 
+So, the expression sizeof(arr)/sizeof(arr[0]) becomes sizeof(int *)/sizeof(int) 
